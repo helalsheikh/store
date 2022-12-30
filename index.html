@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h2 style="background: green;"><marquee>A balance sheet in a grocery store/2023</marquee></h2>
+
+<input id="myInput" type="text" placeholder="Please search name">
+<br><br>
+
+<table class="table table-hover">
+  <thead>
+  <tr>
+    <th>S/N</th>
+    <th>Name</th>
+    <th>Father's Name</th>
+    <th>Amaount</th>
+    <th>Submit</th>
+    <th>Due</th>
+    <th>Mobile</th>
+  </tr>
+  </thead>
+
+  <tbody id="myTable">
+  <tr>
+    <td>1</td>
+    <td>Helal</td>
+    <td>Ibrahim</td>
+    <td>4500</td>
+    <td>500</td>
+    <td>4000</td>
+    <td>0175xxxxxx</td>
+  </tr>
+
+  <tr>
+    <td>2</td>
+    <td>Dulal</td>
+    <td>Ibrahim</td>
+    <td>5000</td>
+    <td>3000</td>
+    <td>2000</td>
+    <td>0175xxxxxx</td>
+  </tr>
+
+  <tr>
+    <td>3</td>
+    <td>Kamal</td>
+    <td>Ibadot</td>
+    <td>3600</td>
+    <td>3000</td>
+    <td>600</td>
+    <td>0175xxxxxx</td>
+  </tr>
+
+  <tr>
+    <td>4</td>
+    <td>Jony</td>
+    <td>Korim</td>
+    <td>3600</td>
+    <td>3000</td>
+    <td>600</td>
+    <td>0175xxxxxx</td>
+  </tr>
+
+  <tr>
+    <td>5</td>
+    <td>Polash</td>
+    <td>Samiul</td>
+    <td>6200</td>
+    <td>4000</td>
+    <td>2200</td>
+    <td>0175xxxxxx</td>
+  </tr>
+
+  
+  <tr>
+    <td>6</td>
+    <td>Robbany</td>
+    <td>Mofijul</td>
+    <td>6200</td>
+    <td>4000</td>
+    <td>2200</td>
+    <td>0175xxxxxx</td>
+  </tr>
+  
+  <tr>
+    <td>7</td>
+    <td>Anuwar</td>
+    <td>Moyna Mia</td>
+    <td>6200</td>
+    <td>4000</td>
+    <td>2200</td>
+    <td>0175xxxxxx</td>
+  </tr>
+  
+  <tr>
+    <td>8</td>
+    <td>Tonmoy</td>
+    <td>Rokon</td>
+    <td>6200</td>
+    <td>4000</td>
+    <td>2200</td>
+    <td>0175xxxxxx</td>
+  </tr>
+  
+  <tr>
+    <td>9</td>
+    <td>Numan</td>
+    <td>Shorafot</td>
+    <td>6200</td>
+    <td>4000</td>
+    <td>2200</td>
+    <td>0175xxxxxx</td>
+  </tr>
+  
+  <tr>
+    <td>10</td>
+    <td>Mony</td>
+    <td>Razan</td>
+    <td>6200</td>
+    <td>4000</td>
+    <td>2200</td>
+    <td>0175xxxxxx</td>
+  </tr>
+
+  <tr>
+    <td>11</td>
+    <td>Shemol</td>
+    <td>Jolil Mia</td>
+    <td>6200</td>
+    <td>4000</td>
+    <td>2200</td>
+    <td>0175xxxxxx</td>
+  </tr>
+  
+  <tr>
+    <td>12</td>
+    <td>Abul</td>
+    <td>Manik</td>
+    <td>6200</td>
+    <td>4000</td>
+    <td>2200</td>
+    <td>0175xxxxxx</td>
+  </tr>
+  
+  <tr>
+    <td>13</td>
+    <td>Rofik</td>
+    <td>Jalal</td>
+    <td>6200</td>
+    <td>4000</td>
+    <td>2200</td>
+    <td>0175xxxxxx</td>
+  </tr>
+   
+  <tr>
+    <td>14</td>
+    <td>Onik</td>
+    <td>Foysal</td>
+    <td>6200</td>
+    <td>4000</td>
+    <td>2200</td>
+    <td>0175xxxxxx</td>
+  </tr>
+  
+  <tr>
+    <td>15</td>
+    <td>Kona</td>
+    <td>Abul</td>
+    <td>6200</td>
+    <td>4000</td>
+    <td>2200</td>
+    <td>0175xxxxxx</td>
+  </tr>
+  
+  <tr>
+    <td>16</td>
+    <td>Bipasha</td>
+    <td>Bulbul</td>
+    <td>6200</td>
+    <td>4000</td>
+    <td>2200</td>
+    <td>0175xxxxxx</td>
+  </tr>
+  
+  <tr>
+    <td>17</td>
+    <td>Chamely</td>
+    <td>Chanmia</td>
+    <td>6200</td>
+    <td>4000</td>
+    <td>2200</td>
+    <td>0175xxxxxx</td>
+  </tr>
+  
+  <tr>
+    <td>18</td>
+    <td>Konica</td>
+    <td>Mofiz</td>
+    <td>6200</td>
+    <td>4000</td>
+    <td>2200</td>
+    <td>0175xxxxxx</td>
+  </tr>
+</tbody>
+
+
+</table>
+</body>
+</html>
